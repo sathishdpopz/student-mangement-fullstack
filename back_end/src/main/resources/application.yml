@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mySQL://localhost:3306/school_management_fullstack
+    username: root
+    password: admin
+  jpa:
+    database-platform: org.springframework.orm.jpa.vendor.Database.MYSQL
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format-sql: true
